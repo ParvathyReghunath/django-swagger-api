@@ -4,7 +4,6 @@ from .views import ItemListCreate,ItemDetail
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
     path('items/',ItemListCreate.as_view(),name='item_list'),
     path('items/<int:pk>',ItemDetail.as_view(),name='item_detail'),
 
